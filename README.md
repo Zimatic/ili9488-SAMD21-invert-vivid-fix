@@ -1,6 +1,8 @@
 # ILI9488 (320×480) on SAMD21 (Arduino Zero) — Handover Package
 
-This package contains everything you need to bring up a **320×480 SPI “ILI9488” TFT** on a **SAMD21 (Arduino/Genuino Zero)** with the exact settings we proved working.
+This package contains everything you need to bring up some clone or cheap(ish/er) AE **320×480 SPI “ILI9488” TFT** on a **SAMD21 (Arduino/Genuino Zero)** with the exact settings we proved working for our panel / project maybe it will help you.
+
+Symptoms, screen draws inverted, screen doesnt boot BL is on but black screen on, screen is fussy about settings.
 
 **Why this works:** many ILI9488 breakouts need **18‑bit color (COLMOD=0x66)**, **display inversion ON**, and a **stronger power/gamma** init to avoid the washed/pastel “CMYK” look. The included raw driver enforces that and draws using **true 24‑bit writes** (3 bytes/pixel) so there’s no mismatch.
 
