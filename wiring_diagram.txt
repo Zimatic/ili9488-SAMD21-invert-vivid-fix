@@ -1,0 +1,16 @@
+ASCII wiring — ICSP SPI header (top view, board facing you)
+
+MISO | 3V3
+SCK  | MOSI
+RESET| GND
+
+Connect TFT:
+  CS  → D3
+  DC  → D0
+  RST → D1
+  MOSI→ ICSP MOSI
+  MISO→ ICSP MISO
+  SCK → ICSP SCK
+  VDD → 3V3 (or 5V if unstable)
+  BL  → 3V3 or 5V (constant, NOT GPIO)
+  GND → GND (common)

@@ -1,0 +1,16 @@
+TFT 14‑pin header → SAMD21 (Arduino Zero)
+
+1: VDD   → 3V3 (or 5V)
+2: GND   → GND
+3: CS    → D3
+4: RST   → D1
+5: DC    → D0
+6: SDI   → ICSP MOSI
+7: SCK   → ICSP SCK
+8: BL    → 3V3 or 5V (constant rail, NOT GPIO)
+9: SDO   → ICSP MISO
+10: TCK  → (touch SCK, unused)
+11: TCS  → (touch CS, unused)
+12: TDI  → (touch MOSI, unused)
+13: TDO  → (touch MISO, unused)
+14: PEN  → (touch IRQ, unused)
