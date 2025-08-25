@@ -23,7 +23,7 @@ Oddly enough some pins didn't work for me but D1,0,3 did workso recommend move p
 
 ## Quick Start (RAW SPI driver)
 
-1. **Wire it** exactly per the pin map (below). **SPI uses the ICSP header**.
+1. **Wire it** exactly per the pin map (below) I left pin 9 SDO out since that interfered with touch for me not needed for most builds. **SPI uses the ICSP header**.
 2. **Power:** logic at **3.3 V**. Feed **VDD + BL** with **3.3 V or 5 V** (if specc allows); if unstable/washed, use **5 V** for VDD+BL (common GND).
 3. Open `src/ili9488_samd21_lockin.ino` in Arduino IDE.
 4. Tools → Board: **Arduino/Genuino Zero (Native USB Port)**.
