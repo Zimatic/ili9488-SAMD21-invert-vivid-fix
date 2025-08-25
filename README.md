@@ -24,7 +24,7 @@ Oddly enough some pins didn't work for me but D1,0,3 did workso recommend move p
 ## Quick Start (RAW SPI driver)
 
 1. **Wire it** exactly per the pin map (below). **SPI uses the ICSP header**.
-2. **Power:** logic at **3.3 V**. Feed **VDD + BL** with **3.3 V or 5 V**; if unstable/washed, use **5 V** for VDD+BL (common GND).
+2. **Power:** logic at **3.3 V**. Feed **VDD + BL** with **3.3 V or 5 V** (if specc allows); if unstable/washed, use **5 V** for VDD+BL (common GND).
 3. Open `src/ili9488_samd21_lockin.ino` in Arduino IDE.
 4. Tools → Board: **Arduino/Genuino Zero (Native USB Port)**.
 5. Upload. You should see RGB bars and a blinking magenta square.
@@ -82,8 +82,8 @@ If you want higher‑level drawing APIs, use `optional/Arduino_GFX_fix_shim.ino`
 ## Troubleshooting
 
 - **Pastel/washed:** ensure `COLMOD=0x66`, `INVON`, and the VIVID sequence are applied; keep logic 3.3 V, try 5 V (if screen specc allows) on VDD+BL.
-- **Blank/white after reacting:** lower `SPI_HZ` to 8 MHz; power‑cycle; check MOSI/MISO/SCK on **ICSP**.
+- **Blank/black but with BL on/white after reacting:** lower `SPI_HZ` to 8 MHz; power‑cycle; check MOSI/MISO/SCK on **ICSP**.
 - **Wrong orientation:** use `setRotation(0|1|2|3)`; 0 and 2 were confirmed good.
 - **Flicker/tearing:** stay at 16 MHz; shorten wires; common ground.
 
-Good luck — this bundle is the “known good” state we validated for the iLi9488 clone.
+Good luck — this bundle is the “known good” state we validated for our AliExpress iLi9488 clone.
