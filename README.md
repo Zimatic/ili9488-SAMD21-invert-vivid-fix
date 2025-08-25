@@ -1,6 +1,6 @@
 # ILI9488 (320×480) on SAMD21 (Arduino Zero) inversion non-vivid fix & small shim.
 
-This package contains everything you need to bring up some clone or cheap(ish/er) AE **320×480 SPI “ILI9488” TFT** on a **SAMD21 (Arduino/Genuino Zero)** with the exact settings we proved working for our panel / project maybe it will help you.
+This package contains everything you need to bring up or move along some clone or cheap(ish/er) AE **320×480 SPI “ILI9488” TFT** on a **SAMD21 (Arduino/Genuino Zero)** with the exact settings we proved working for our panel / project maybe it will help you.
 
 Symptoms, screen draws inverted, screen doesnt boot BL is on but black screen on, screen is fussy about settings.
 Oddly enough some pins didn't work for me but D1,0,3 did work. No real logic as to why. But that's what you get for working with 2 clones :) (RobotDyn SAMD21 clone, ili9488 AE clone in my case)
