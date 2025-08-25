@@ -84,4 +84,4 @@ If you want higher‑level drawing APIs, use `optional/Arduino_GFX_fix_shim.ino`
 - **Wrong orientation:** use `setRotation(0|1|2|3)`; 0 and 2 were confirmed good.
 - **Flicker/tearing:** stay at 16 MHz; shorten wires; common ground.
 
-Good luck — this bundle is the “known good” state we validated together.
+Good luck — this bundle is the “known good” state we validated for the iLi9488 clone.
