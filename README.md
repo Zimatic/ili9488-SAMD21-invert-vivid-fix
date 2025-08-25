@@ -1,4 +1,4 @@
-# ILI9488 (320×480) on SAMD21 (Arduino Zero) — Handover Package
+# ILI9488 (320×480) on SAMD21 (Arduino Zero) inversion non-vivid fix & small shim.
 
 This package contains everything you need to bring up some clone or cheap(ish/er) AE **320×480 SPI “ILI9488” TFT** on a **SAMD21 (Arduino/Genuino Zero)** with the exact settings we proved working for our panel / project maybe it will help you.
 
