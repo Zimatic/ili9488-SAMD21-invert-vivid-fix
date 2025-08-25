@@ -51,7 +51,7 @@ This package contains everything you need to bring up a **320×480 SPI “ILI948
 5: DC    → D0
 6: SDI   → ICSP MOSI
 7: SCK   → ICSP SCK
-8: BL    → 3V3 or 5V (backlight, NOT a GPIO)
+8: BL    → 3V3 or 5V (if screen specc allows) (backlight, NOT a GPIO)
 9: SDO   → ICSP MISO
 10: TCK  → (touch SCK, unused here)
 11: TCS  → (touch CS, unused here)
@@ -77,7 +77,7 @@ If you want higher‑level drawing APIs, use `optional/Arduino_GFX_fix_shim.ino`
 
 ## Troubleshooting
 
-- **Pastel/washed:** ensure `COLMOD=0x66`, `INVON`, and the VIVID sequence are applied; keep logic 3.3 V, try 5 V on VDD+BL.
+- **Pastel/washed:** ensure `COLMOD=0x66`, `INVON`, and the VIVID sequence are applied; keep logic 3.3 V, try 5 V (if screen specc allows) on VDD+BL.
 - **Blank/white after reacting:** lower `SPI_HZ` to 8 MHz; power‑cycle; check MOSI/MISO/SCK on **ICSP**.
 - **Wrong orientation:** use `setRotation(0|1|2|3)`; 0 and 2 were confirmed good.
 - **Flicker/tearing:** stay at 16 MHz; shorten wires; common ground.
