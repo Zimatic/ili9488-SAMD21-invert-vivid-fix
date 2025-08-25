@@ -2,8 +2,9 @@
 
 This package contains everything you need to bring up or move along some clone or cheap(ish/er) AE **320×480 SPI “ILI9488” TFT** on a **SAMD21 (Arduino/Genuino Zero)** with the exact settings we proved working for our panel / project maybe it will help you.
 
-Symptoms, screen draws inverted, screen doesnt boot BL is on but black screen on, screen is fussy about settings.
-Oddly enough some pins didn't work for me but D1,0,3 did work. No real logic as to why. But that's what you get for working with 2 clones :) (RobotDyn SAMD21 clone, ili9488 AE clone in my case)
+Symptoms, screen draws inverted, screen doesnt boot, Backlight is on but black screen ontop (inversion), screen is fussy about settings and refuses libraries.
+
+Oddly enough some pins didn't work for me but D1,0,3 did workso recommend move pins around. No real logic as to why. But that's what you get for working with 2 clones :) (RobotDyn SAMD21 clone, ili9488 AE clone in my case)
 
 **Why this works:** many ILI9488 breakouts need **18‑bit color (COLMOD=0x66)**, **display inversion ON**, and a **stronger power/gamma** init to avoid the washed/pastel “CMYK” look. The included raw driver enforces that and draws using **true 24‑bit writes** (3 bytes/pixel) so there’s no mismatch.
 
